@@ -11,7 +11,7 @@ A sample project to display selected properties from JSON files.
 1. Clone the repository:
     git clone https://github.com/Ex-ige/net8razer/tree/master
 
-2. Navigate to the project directory
+2. Navigate to the project directory:
     cd MyWebStore
 
 3. Restore dependencies:
