@@ -1,0 +1,30 @@
+# Build directories
+bin/
+obj/
+
+# User-specific files
+*.suo
+*.user
+*.userprefs
+.vs/
+.vscode/
+
+# NuGet packages
+packages/
+
+# Logs and temporary files
+*.log
+*.tmp
+*.temp
+
+# Environment variables
+appsettings.Development.json
+appsettings.*.json
+
+# Visual Studio specific
+*.sln.ide
+*.sln.docstates
+
+# DotNet specific
+*.db
+*.pdb

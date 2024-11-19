@@ -1,0 +1,30 @@
+@page
+@model MyOrdersModel
+
+<h1>My Orders</h1>
+<table class="table ">
+    <thead>
+        <tr>
+            <td scope="col" class="fw-bold">Order ID</td>
+            <td scope="col" class="fw-bold">Total Net Cost</td>
+        </tr>
+    </thead>
+    <tbody class="table-group-divider">
+        @foreach (var order in Model.Orders)
+        {
+            <tr>
+                <td>@order.Id</td>
+                <td>
+                    @if (order.Items != null && order.Items.Any())
+                    {
+                        @order.Items.Sum(item => item.NetCost)
+                    }
+                    else
+                    {
+                        <span>No tems</span>
+                    }
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
