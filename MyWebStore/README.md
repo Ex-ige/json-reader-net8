@@ -17,5 +17,5 @@ A sample project to display selected properties from JSON files.
 3. Restore dependencies:
     dotnet restore
 
-4. Run the application
+4. Run the application:
     dotnet run
